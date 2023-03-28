@@ -12,6 +12,10 @@ Başlıca Pytest dekoratörleri aşağıdaki gibidir:
 
     @pytest.mark.parametrize: Bu dekoratör, test işlevlerini farklı argüman kombinasyonları ile çalıştırmak için kullanılır.
 
+            @pytest.mark.parametrize(argnames, argvalues): Bu dekoratör, argnames argümanı ile belirtilen argüman isimleri ve argvalues argümanı ile belirtilen argüman değerleri listesi kullanılarak parametreleri test etmek için kullanılır.
+
+            @pytest.mark.parametrize("arg", [val1, val2, ...]): Bu dekoratör, bir argümanın farklı değerlerinin kullanılarak test edilmesini sağlar.
+
     @pytest.mark.skip: Bu dekoratör, bir testi atlamak için kullanılır.
 
     @pytest.mark.xfail: Bu dekoratör, bir testin bilerek başarısız olması durumunda kullanılır.
@@ -22,8 +26,3 @@ Başlıca Pytest dekoratörleri aşağıdaki gibidir:
 
     @pytest.mark.filterwarnings: Bu dekoratör, belirli bir testin çalıştırması sırasında Python hatalarını filtrelemek veya kontrol etmek için kullanılır.
 
-    @pytest.mark.parametrize(argnames, argvalues): Bu dekoratör, argnames argümanı ile belirtilen argüman isimleri ve argvalues argümanı ile belirtilen argüman değerleri listesi kullanılarak parametreleri test etmek için kullanılır.
-
-    @pytest.mark.parametrize("arg", [val1, val2, ...]): Bu dekoratör, bir argümanın farklı değerlerinin kullanılarak test edilmesini sağlar.
-
-    @pytest.mark.parametrize("arg", [val1, val2, ...], indirect=True): Bu dekoratör, bir argümanı indirekt olarak kullanmak için kullanılır.
